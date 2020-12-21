@@ -45,6 +45,7 @@ div {
 .wall {
     background-color: darkgrey;
     transition: 1s;
+    z-index: 2;
 }
 
 span:hover~.wall {
@@ -53,4 +54,20 @@ span:hover~.wall {
     width: 300px;
     height: 200px;
     transform: translate(-50%, 0);
+}
+
+/* roof */
+.roof {
+    background-color: darkred;
+    transition: 1s 0.5s;
+    z-index: 1;
+}
+
+span:hover~.roof {
+    left: 50%;
+    bottom: 400px;
+    width: calc(300px / 1.41);
+    height: calc(300px / 1.41);
+    transform-origin: 0 100%;
+    transform: translate(-150px, 0) rotate(45deg);
 }
