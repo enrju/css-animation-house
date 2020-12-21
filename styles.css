@@ -4,22 +4,23 @@
     box-sizing: border-box;
 }
 
+span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+}
+
 div {
     position: absolute;
     top: 90vh;
     left: 10vw;
     width: 0;
     height: 0;
-}
-
-span {
-    display: block;
-    width: 90vw;
-    margin: 10px auto;
-    color: white;
-    background-color: red;
-    text-align: center;
-    line-height: 300%;
 }
 
 .sky {
@@ -36,6 +37,6 @@ span {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30vh;
+    height: 300px;
     background-color: darkgreen;
 }
