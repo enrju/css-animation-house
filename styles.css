@@ -85,3 +85,18 @@ span:hover~.chimney {
     height: 200px;
     transform: translate(50px, 30px);
 }
+
+/* door */
+.door {
+    background-color: rgb(109, 43, 17);
+    transition: 1s 1.5s;
+    z-index: 3;
+}
+
+span:hover~.door {
+    left: 50%;
+    bottom: 200px;
+    width: 70px;
+    height: 150px;
+    transform: translate(-50%, 0);
+}
