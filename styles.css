@@ -71,3 +71,17 @@ span:hover~.roof {
     transform-origin: 0 100%;
     transform: translate(-150px, 0) rotate(45deg);
 }
+
+/* chimney */
+.chimney {
+    background-color: darkgrey;
+    transition: 1s 1s;
+}
+
+span:hover~.chimney {
+    left: 50%;
+    bottom: 400px;
+    width: 50px;
+    height: 200px;
+    transform: translate(50px, 30px);
+}
