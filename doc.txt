@@ -1,0 +1,15 @@
+Animation of making a house from basic html tags using the transition property. 
+The scene will consist of
+non-animated elements such as:
+- grass
+- sky
+and animated elements of the house and surroundings:
+- wall
+- roof
+- chimney
+- door
+- windows
+- hurdle
+- tree
+- flowers (maybe)
+- chimney smoke (maybe)
