@@ -241,3 +241,49 @@ span:hover~.hurdle>div:last-child {
     width: 20px;
     height: 80px;
 }
+
+/* tree */
+.tree {
+    transition: 1.5s 5.5s;
+}
+
+.tree>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 4;
+    transition: 1s 5.5s;
+}
+
+.tree>div:last-child {
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background-color: brown;
+    z-index: 3;
+    transition: 1s 5.5s;
+}
+
+span:hover~.tree {
+    left: 50%;
+    bottom: 500px;
+    transform: translate(-260px, 0);
+}
+
+span:hover~.tree>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 200px;
+}
+
+span:hover~.tree>div:last-child {
+    top: 100px;
+    left: calc(50px - 30px / 2);
+    width: 30px;
+    height: 200px;
+}
