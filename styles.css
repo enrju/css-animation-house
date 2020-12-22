@@ -17,8 +17,8 @@ span {
 
 div {
     position: absolute;
-    top: 90vh;
-    left: 10vw;
+    bottom: 50px;
+    left: 50px;
     width: 0;
     height: 0;
 }
@@ -37,6 +37,253 @@ div {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: darkgreen;
+}
+
+/* wall */
+.wall {
+    background-color: darkgrey;
+    transition: 1s;
+    z-index: 2;
+}
+
+span:hover~.wall {
+    left: 50%;
+    bottom: 200px;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, 0);
+}
+
+/* roof */
+.roof {
+    background-color: darkred;
+    transition: 1s 0.5s;
+    z-index: 1;
+}
+
+span:hover~.roof {
+    left: 50%;
+    bottom: 400px;
+    width: calc(300px / 1.41);
+    height: calc(300px / 1.41);
+    transform-origin: 0 100%;
+    transform: translate(-150px, 0) rotate(45deg);
+}
+
+/* chimney */
+.chimney {
+    background-color: darkgrey;
+    transition: 1s 1s;
+}
+
+span:hover~.chimney {
+    left: 50%;
+    bottom: 400px;
+    width: 50px;
+    height: 200px;
+    transform: translate(50px, 30px);
+}
+
+/* door */
+.door {
+    background-color: rgb(109, 43, 17);
+    transition: 1s 1.5s;
+    z-index: 3;
+}
+
+span:hover~.door {
+    left: 50%;
+    bottom: 200px;
+    width: 70px;
+    height: 150px;
+    transform: translate(-50%, 0);
+}
+
+/* windows */
+.window {
+    border: 0px solid rgb(109, 43, 17);
+    background-color: lightblue;
+    z-index: 3;
+}
+
+.window:nth-of-type(7) {
+    transition: 1s 2s;
+}
+
+.window:nth-of-type(8) {
+    transition: 1s 2.5s;
+}
+
+.window>div {
+    background-color: rgb(109, 43, 17);
+}
+
+.window>div:first-child {
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+}
+
+.window>div:last-child {
+    left: 50%;
+    top: 0%;
+    width: 2px;
+    height: 100%;
+}
+
+span:hover~.window {
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgb(109, 43, 17);
+}
+
+span:hover~.window:nth-of-type(7) {
+    left: 50%;
+    bottom: 280px;
+    transform: translate(60px, 0);
+}
+
+span:hover~.window:nth-of-type(8) {
+    left: 50%;
+    bottom: 280px;
+    transform: translate(-130px, 0);
+}
+
+/* hurdle */
+.hurdle {
+    z-index: 4;
+}
+
+.hurdle:nth-of-type(9),
+.hurdle:nth-of-type(9)>div {
+    transition: 1s 3.0s;
+}
+
+.hurdle:nth-of-type(10),
+.hurdle:nth-of-type(10)>div {
+    transition: 1s 3.5s;
+}
+
+.hurdle:nth-of-type(11),
+.hurdle:nth-of-type(11)>div {
+    transition: 1s 4.0s;
+}
+
+.hurdle:nth-of-type(12),
+.hurdle:nth-of-type(12)>div {
+    transition: 1s 4.5s;
+}
+
+.hurdle:nth-of-type(13),
+.hurdle:nth-of-type(13)>div {
+    transition: 1s 5.0s;
+}
+
+.hurdle>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 0px solid rgb(109, 43, 17);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.hurdle>div:last-child {
+    background-color: rgb(109, 43, 17);
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+span:hover~.hurdle {
+    left: 50%;
+    bottom: 300px;
+}
+
+span:hover~.hurdle:nth-of-type(9) {
+    transform: translate(160px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(10) {
+    transform: translate(190px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(11) {
+    transform: translate(220px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(12) {
+    transform: translate(250px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(13) {
+    transform: translate(280px, 0);
+}
+
+span:hover~.hurdle>div:first-child {
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 20px solid rgb(109, 43, 17);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+span:hover~.hurdle>div:last-child {
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 80px;
+}
+
+/* tree */
+.tree {
+    transition: 1.5s 5.5s;
+}
+
+.tree>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 4;
+    transition: 1s 5.5s;
+}
+
+.tree>div:last-child {
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background-color: brown;
+    z-index: 3;
+    transition: 1s 5.5s;
+}
+
+span:hover~.tree {
+    left: 50%;
+    bottom: 500px;
+    transform: translate(-260px, 0);
+}
+
+span:hover~.tree>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 200px;
+}
+
+span:hover~.tree>div:last-child {
+    top: 100px;
+    left: calc(50px - 30px / 2);
+    width: 30px;
+    height: 200px;
 }
