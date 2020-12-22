@@ -37,7 +37,7 @@ div {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: darkgreen;
 }
 
@@ -150,4 +150,94 @@ span:hover~.window:nth-of-type(8) {
     left: 50%;
     bottom: 280px;
     transform: translate(-130px, 0);
+}
+
+/* hurdle */
+.hurdle {
+    z-index: 4;
+}
+
+.hurdle:nth-of-type(9),
+.hurdle:nth-of-type(9)>div {
+    transition: 1s 3.0s;
+}
+
+.hurdle:nth-of-type(10),
+.hurdle:nth-of-type(10)>div {
+    transition: 1s 3.5s;
+}
+
+.hurdle:nth-of-type(11),
+.hurdle:nth-of-type(11)>div {
+    transition: 1s 4.0s;
+}
+
+.hurdle:nth-of-type(12),
+.hurdle:nth-of-type(12)>div {
+    transition: 1s 4.5s;
+}
+
+.hurdle:nth-of-type(13),
+.hurdle:nth-of-type(13)>div {
+    transition: 1s 5.0s;
+}
+
+.hurdle>div:first-child {
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 0px solid rgb(109, 43, 17);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.hurdle>div:last-child {
+    background-color: rgb(109, 43, 17);
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+span:hover~.hurdle {
+    left: 50%;
+    bottom: 300px;
+}
+
+span:hover~.hurdle:nth-of-type(9) {
+    transform: translate(160px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(10) {
+    transform: translate(190px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(11) {
+    transform: translate(220px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(12) {
+    transform: translate(250px, 0);
+}
+
+span:hover~.hurdle:nth-of-type(13) {
+    transform: translate(280px, 0);
+}
+
+span:hover~.hurdle>div:first-child {
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 20px solid rgb(109, 43, 17);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+span:hover~.hurdle>div:last-child {
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 80px;
 }
